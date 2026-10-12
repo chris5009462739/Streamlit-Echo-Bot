@@ -3,7 +3,7 @@ import streamlit as st
 st.title("ChristianAcosta_Echo Bot")
 
 # Initialize chat history
-if "message" not in st.session_state:
+if "messages" not in st.session_state:
   st.session_state.messages = []
 
 # Display chat messages from history on app rerun
