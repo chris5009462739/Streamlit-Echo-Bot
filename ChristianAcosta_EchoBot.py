@@ -1,10 +1,16 @@
 import streamlit as st
 
 st.title("ChristianAcosta_Echo Bot")
+with st.chat_message("assistant"):
+st.image(“TheSavedImage.png", caption="CIT 144 – Demographics Data
+Visualization")
 
 # Initialize chat history
 if "messages" not in st.session_state:
   st.session_state.messages = []
+
+with st.chat_message("assistant"):
+  st.image(“PowerBiDashboard.png", caption="CIT 144 – Demographics Data Visualization")
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
